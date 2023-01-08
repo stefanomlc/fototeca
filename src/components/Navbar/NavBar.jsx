@@ -1,4 +1,5 @@
 import Raect from "react";
+import { NavLink } from "react-router-dom";
 import "./NavBar.css"
 import CartWidget from "../CartWidget/CartWidget";
 
@@ -7,20 +8,22 @@ export const Navbar = () =>{
         <div className="container ">
            <nav className="nav justify-content-around">
                 <div className="nav__brand">
-                    <a className="nav__link" href="#">Fototeca</a>
+                    <NavLink className="nav__link" to="/">Fototeca</NavLink>
                 </div>
                 <ul className="d-flex justify-content-around">
                     <li>
-                        <a className="nav__link" href="#"> Alimentos</a>
+                        <NavLink className="nav__link" to="/categoria/alimentos"> Alimentos</NavLink>
                     </li>
                     <li>
-                        <a className="nav__link" href="#"> Bebidas</a>
+                        <NavLink className="nav__link" to="/categoria/bebidas"> Bebidas</NavLink>
                     </li>
                     <li>
-                        <a className="nav__link" href="#"> Conservas</a>
+                        <NavLink className="nav__link" to="/categoria/conservas"> Conservas</NavLink>
                     </li>
                     <li>
-                        <a className="nav__link" href="#"> <CartWidget/></a>
+                        <NavLink className="nav__link" to="/cart">
+                            <CartWidget/>
+                            </NavLink>
                     </li>
                 </ul>
             </nav> 
