@@ -1,0 +1,7 @@
+.itemCart img {
+    max-width: 450px;
+}
+
+.itemCart {
+    display: flex;
+}
