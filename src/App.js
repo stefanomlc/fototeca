@@ -14,8 +14,7 @@ import CartProvider from './components/CartProvider/CartProvider';
 function App() {
   return (
     <>
-      <BrowserRouter>
-        
+      <BrowserRouter>        
         <CartProvider> 
           <Navbar/>  
           <Routes>
