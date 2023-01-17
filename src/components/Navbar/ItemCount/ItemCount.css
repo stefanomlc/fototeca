@@ -1,7 +1,36 @@
 .counter{
     width: fit-content;
-    background-color: aquamarine;
+    background-color: rgb(235, 235, 235);
     margin: auto;
     padding: 1rem;
     text-align: center;
+    border: 0px;
+}
+
+.button {
+    border: 0px;
+    width: 45px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    margin: 10px;
+    font-size: 20px;
+}
+.button:hover{
+    background-color: rgb(176, 223, 255);
+}
+
+span {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.button-ad-cart {
+    border: 0px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+}
+.button-ad-cart:hover{
+    background-color: rgb(176, 223, 255);
 }

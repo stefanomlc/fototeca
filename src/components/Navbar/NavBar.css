@@ -1,8 +1,13 @@
-.nav__link{
+.nav__link {
     padding: 0px 1rem 0px 1rem;
     text-decoration: none;
     font-size: 25px;
     color: black;
+    background: none;
+    padding: 15px 20px 15px 20px;
     
 }
 
+li {
+    list-style-type: none
+}

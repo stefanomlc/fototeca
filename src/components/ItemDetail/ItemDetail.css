@@ -1,4 +1,10 @@
 .detail__image{
-    max-width: 500px;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
 
+}
+
+.content {
+ width: 350px;
 }

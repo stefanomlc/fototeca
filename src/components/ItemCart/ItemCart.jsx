@@ -7,7 +7,7 @@ const ItemCart = ({ product }) => {
     const {removeProduct} = useCartContext();
 
     return (
-        <div className="itemCart">
+        <div className="itemCart d-flex justify-content-evenly ">
             <img src={product.image} alt={product.title} />
             <div>
                 <p>Nombre: {product.name}</p>

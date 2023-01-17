@@ -51,10 +51,12 @@ export default ItemListContainer => {
     }
  */
     return (
-        <>
-        <h1>Item List Container</h1>
+        <div className="container">
+			<h1 className="text-center py-5">Productos disponibles</h1>
         
-        <ItemList data={data}/>
-        </>
+        	<ItemList data={data}/>
+		</div>
+
+        
     );
 }

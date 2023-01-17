@@ -7,11 +7,14 @@ const Item = ({info}) => {
     const producto = useContext(CartProvider);
 
     return (
-        <Link to={`/detalle/${info.id}`} className="product">
+        <Link to={`/detalle/${info.id}`} className="product d-flex justify-content-evenly">
             <img src={info.image} alt="" />
-            <p> Nombre: {info.name} </p>
-            <p> Precio: {info.price}</p>
-            <p> Stock: {info.stock}</p>
+            <div className="product-info">
+                <p> Nombre: {info.name} </p>
+                <p> Precio: {info.price}</p>
+                <p> Stock: {info.stock}</p>
+            </div>
+ 
         </Link>
     );
 } 

@@ -6,7 +6,7 @@ import CartWidget from "../CartWidget/CartWidget";
 export const Navbar = () =>{
     return (
         <div className="container ">
-           <nav className="nav justify-content-around">
+           <nav className="nav justify-content-around py-5">
                 <div className="nav__brand">
                     <NavLink className="nav__link" to="/">Fototeca</NavLink>
                 </div>
