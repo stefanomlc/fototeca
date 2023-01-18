@@ -4,6 +4,7 @@ import { useCartContext } from "../CartProvider/CartProvider";
 import ItemCart from "../ItemCart/ItemCart";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import toast, { Toaster } from 'react-hot-toast';
+import "./Cart.css";
 
 function Cart() {
     const { cart, totalPrice } = useCartContext();
@@ -38,27 +39,27 @@ function Cart() {
 
     if (cart.length === 0) {
         return (
-            <div className="container justify-content-evenly">
+            <div className="container d-flex flex-column align-items-center">
                 <p>No hay elementos en el carrito</p>
-                <Link to="/"> Buscar imágenes</Link>
+                <Link className="link-toHome" to="/"> Buscar imágenes</Link>
             </div>
         )
     }
 
     return (
         
-        <div className="container ">
+        <div className="containe d-flex flex-column align-items-center">
 			
 			{
                 cart.map(product => <ItemCart Key={product.id} product={product} />)
             }
 			
 
-
-            <p>total: {totalPrice()}</p>
-
-
-			<button onClick={handleClick}>Emitir compra</button>
+			<div className="d-flex justify-content-center py-5">
+				<p className="text-center d-flex txt-total-price">total: {totalPrice()}</p>
+				<button className="btn-finish-order" onClick={handleClick}>Emitir compra</button>
+			</div>
+           
 
 			<Toaster
 			position="top-center"

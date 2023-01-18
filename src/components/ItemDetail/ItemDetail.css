@@ -8,3 +8,26 @@
 .content {
  width: 350px;
 }
+
+.button-ad-cart {
+    border: 0px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+}
+.button-ad-cart:hover{
+    background-color: rgb(176, 223, 255);
+}
+
+.btn-goToCart{
+    text-decoration: none;
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.btn-goToCart:hover{
+    background-color: rgb(176, 223, 255);
+}
